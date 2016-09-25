@@ -1,5 +1,5 @@
 require 'test/unit'
-require '../src/save_manager.rb'
+require 'save_manager'
 
 class TestSample < Test::Unit::TestCase
   def test_greeting
