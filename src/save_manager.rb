@@ -12,9 +12,7 @@ module MyGame
 
     # save given data into given file at data/
     def self.save(file_name, data)
-      File.open(Pathname.new(Dir.pwd).join(DATA_DIR, file_name).to_s, 'w') do |f|
-        f.puts(data)
-      end
+      Pathname.pwd.join(DATA_DIR, file_name).write(data)
     end
   end
 end
